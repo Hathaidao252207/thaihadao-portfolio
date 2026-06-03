@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2 | Thai Ha Portfolio</title>
+    <meta name="description" content="Chi tiết Bài tập 2: Khai thác dữ liệu và thông tin">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pdf-container {
+            width: 100%;
+            height: 80vh;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            margin-top: 2rem;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .summary-box {
+            background: rgba(30, 41, 59, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary-light);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2" style="background: #10b981;"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Thai Ha.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="glass-panel">
+            <a href="projects.html" style="color: var(--primary-light); text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">&larr; Quay lại danh sách bài tập</a>
+            
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Bài tập 2: Khai thác dữ liệu và thông tin</h2>
+            
+            <div class="summary-box">
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">🎯 Mục tiêu bài tập:</h3>
+                <p style="color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem;">
+                    Phát triển kỹ năng tìm kiếm, trích xuất và đánh giá độ tin cậy của các nguồn tài liệu học thuật liên quan đến công nghệ AI và mạng 5G/6G.
+                </p>
+
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">⚙️ Quá trình thực hiện:</h3>
+                <ul style="color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li>Lựa chọn chủ đề nghiên cứu: "Ứng dụng AI và Machine Learning trong tối ưu hóa cấp phát tài nguyên vô tuyến mạng 5G và 6G".</li>
+                    <li>Sử dụng Google Scholar và các cơ sở dữ liệu chuyên ngành để tìm kiếm các bài báo khoa học.</li>
+                    <li>Tổng hợp 9 tài liệu học thuật uy tín và trích xuất thông tin (Tác giả, Năm, Phương pháp, Số trích dẫn...).</li>
+                    <li>Lập bảng phân tích ưu, nhược điểm và xếp hạng độ tin cậy của từng tài liệu.</li>
+                </ul>
+
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">📝 Tóm tắt nội dung:</h3>
+                <p style="color: var(--text-main); line-height: 1.6;">
+                    Bài thực hành này tập trung vào kỹ năng <strong>tìm kiếm và đánh giá thông tin học thuật</strong>. Chủ đề nghiên cứu được lựa chọn là <em>"Ứng dụng Trí tuệ nhân tạo (AI) và Học máy (Machine Learning) trong tối ưu hóa cấp phát tài nguyên vô tuyến mạng 5G và hướng tới 6G"</em>. Nội dung bao gồm việc tổng hợp các bài báo khoa học uy tín, lập bảng đánh giá chi tiết (tác giả, cơ quan xuất bản, phương pháp nghiên cứu, độ ảnh hưởng) và phân tích ưu/nhược điểm của từng tài liệu để xác định độ tin cậy.
+                </p>
+            </div>
+
+            <h3 style="margin-bottom: 1rem; color: var(--text-main);">📄 Tài liệu chi tiết:</h3>
+            <div class="pdf-container">
+                <iframe src="assets/bai_tap_2.pdf" title="Nội dung Bài tập 2"></iframe>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1rem;">
+                <a href="assets/bai_tap_2.pdf" download class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 1rem;">Tải xuống PDF</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

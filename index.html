@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Ha | Portfolio - Dự án cá nhân</title>
+    <meta name="description" content="Portfolio Dự án cá nhân của Thai Ha.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-list {
+            list-style: none;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-main);
+        }
+        .about-list li {
+            margin-bottom: 0.8rem;
+        }
+        .about-list strong {
+            color: var(--primary-light);
+        }
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--secondary);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            color: var(--text-muted);
+        }
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .section-container.reverse {
+            flex-direction: row-reverse;
+        }
+        .section-text {
+            flex: 1;
+        }
+        .section-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .section-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--glass-shadow);
+            border: 2px solid var(--glass-border);
+            transition: transform 0.3s ease;
+        }
+        .section-image img:hover {
+            transform: scale(1.02);
+        }
+        ul.styled-list {
+            list-style: none;
+        }
+        ul.styled-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        ul.styled-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+        .highlight-text {
+            background: linear-gradient(to right, var(--primary-light), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Thai Ha.</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero: Something About Me -->
+        <section class="section-container">
+            <div class="section-text">
+                <h1 class="hero-title" style="font-size: 3.5rem;">SOMETHING<br><span>ABOUT ME</span></h1>
+                <ul class="about-list">
+                    <li><strong>Họ và tên:</strong> Đào Thái Hà</li>
+                    <li><strong>Sinh viên:</strong> EC4-K70 - Trường Đại học Công Nghệ - ĐHQGHN</li>
+                    <li><strong>Sở thích:</strong> Xem phim, nghe nhạc, đá bóng, cầu lông.</li>
+                </ul>
+                <div class="quote">
+                    "Either you die a hero, or you live long enough to see yourself become the villain"<br>
+                    <span style="font-size: 0.9em; color: var(--primary-light);">- Harvey Dent</span>
+                </div>
+            </div>
+            <div class="section-image hero-image">
+                <img src="assets/img_2_X7.png" alt="Something About Me" style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; animation: morph 8s ease-in-out infinite;">
+            </div>
+        </section>
+
+        <!-- Target Section -->
+        <section class="section-container reverse glass-panel">
+            <div class="section-text">
+                <h2 class="section-title" style="text-align: left; font-size: 2.5rem; margin-bottom: 1.5rem;"><span class="highlight-text">TARGET</span></h2>
+                <ul class="styled-list" style="font-size: 1.1rem; color: var(--text-main);">
+                    <li>Du lịch khắp nơi để tìm sự bình yên trong tâm hồn.</li>
+                    <li>Trở thành Kỹ sư phân tích và tối ưu hóa mạng (Network Optimization Engineer).</li>
+                    <li>Xem nhiều phim, đọc nhiều sách nhất có thể trải nghiệm nhiều câu chuyện, nhiều cuộc đời khác nhau.</li>
+                </ul>
+            </div>
+            <div class="section-image">
+                <img src="assets/target_img.jpg" alt="My Targets">
+            </div>
+        </section>
+
+        <!-- Purpose Section -->
+        <section class="glass-panel" style="margin-top: 4rem;">
+            <h2 class="section-title"><span class="highlight-text">PURPOSE OF THE PORTFOLIO</span></h2>
+            <ul class="styled-list" style="font-size: 1.1rem; color: var(--text-main); max-width: 900px; margin: 0 auto;">
+                <li>Ghi lại quá trình học tập môn học thông qua các hình ảnh, bài viết, dự án bản thân đã thực hiện qua mỗi bài tập của từng module học.</li>
+                <li>Sử dụng các công cụ số và AI hiệu quả để áp dụng vào học tập cũng như cuộc sống một cách hiệu quả và có chọn lọc nhằm tiết kiệm thời gian và sức lực nhưng vẫn đảm bảo kết quả tốt nhất.</li>
+                <li>Biết cách áp dụng những kiến thức đã được học vào thực tế để những kĩ năng không chỉ áp dụng cho phạm vi môn học mà còn cho những mục đích lâu dài trong thực tế đời sống.</li>
+            </ul>
+        </section>
+        
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="projects.html" class="btn btn-primary">Xem Bài Tập Của Mình</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

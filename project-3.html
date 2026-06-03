@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3 | Thai Ha Portfolio</title>
+    <meta name="description" content="Chi tiết Bài tập 3: Tổng quan về trí tuệ nhân tạo">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pdf-container {
+            width: 100%;
+            height: 80vh;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            margin-top: 2rem;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .summary-box {
+            background: rgba(30, 41, 59, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary-light);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2" style="background: #10b981;"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Thai Ha.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="glass-panel">
+            <a href="projects.html" style="color: var(--primary-light); text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">&larr; Quay lại danh sách bài tập</a>
+            
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Bài tập 3: Tổng quan về trí tuệ nhân tạo</h2>
+            
+            <div class="summary-box">
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">🎯 Mục tiêu bài tập:</h3>
+                <p style="color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem;">
+                    Rèn luyện kỹ năng giao tiếp với AI tạo sinh thông qua việc xây dựng và tối ưu hóa các câu lệnh (Prompt) phục vụ cho việc học tập.
+                </p>
+
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">⚙️ Quá trình thực hiện:</h3>
+                <ul style="color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li>Lựa chọn các tác vụ học tập thực tế: tóm tắt bài học, giải thích khái niệm và tạo bộ câu hỏi ôn tập.</li>
+                    <li>Sử dụng Google Gemini để thực nghiệm 3 mức độ Prompt: Cơ bản, Cải tiến, Nâng cao (Role Prompting).</li>
+                    <li>So sánh, đối chiếu và đánh giá chất lượng phản hồi của AI ở từng mức độ.</li>
+                    <li>Tổng hợp và đúc kết kinh nghiệm viết câu lệnh theo mô hình chuẩn CLEAR (Context - Role - Explicit - Audience - Refine).</li>
+                </ul>
+
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">📝 Tóm tắt nội dung:</h3>
+                <p style="color: var(--text-main); line-height: 1.6;">
+                    Bài thực hành này nghiên cứu cách giao tiếp và ứng dụng công cụ AI (như Google Gemini) để phục vụ cho các tác vụ học tập. Cụ thể, tài liệu phân tích <strong>3 mức độ viết Prompt (Câu lệnh)</strong>: Cơ bản, Cải tiến, và Nâng cao (sử dụng nhập vai Role Prompting, COT), từ đó đánh giá sự khác biệt trong chất lượng phản hồi của AI. Cuối cùng, bài tập đúc kết nguyên tắc viết câu lệnh theo <strong>mô hình CLEAR</strong> (Context, Role, Explicit Instruction, Audience, Refine) giúp tối ưu hóa việc sử dụng AI trong quá trình nghiên cứu hiệu quả nhất.
+                </p>
+            </div>
+
+            <h3 style="margin-bottom: 1rem; color: var(--text-main);">📄 Tài liệu chi tiết:</h3>
+            <div class="pdf-container">
+                <iframe src="assets/bai_tap_3.pdf" title="Nội dung Bài tập 3"></iframe>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1rem;">
+                <a href="assets/bai_tap_3.pdf" download class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 1rem;">Tải xuống PDF</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

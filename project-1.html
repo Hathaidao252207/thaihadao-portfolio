@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1 | Thai Ha Portfolio</title>
+    <meta name="description" content="Chi tiết Bài tập 1: Máy tính và thiết bị ngoại vi">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pdf-container {
+            width: 100%;
+            height: 80vh;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            margin-top: 2rem;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .summary-box {
+            background: rgba(30, 41, 59, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary-light);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2" style="background: #10b981;"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Thai Ha.</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="glass-panel">
+            <a href="projects.html" style="color: var(--primary-light); text-decoration: none; display: inline-block; margin-bottom: 1.5rem;">&larr; Quay lại danh sách bài tập</a>
+            
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Bài tập 1: Thao tác cơ bản với tập tin và thư mục</h2>
+            
+            <div class="summary-box">
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">🎯 Mục tiêu bài tập:</h3>
+                <p style="color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem;">
+                    Làm quen và thành thạo các thao tác quản lý dữ liệu cơ bản trên hệ điều hành Windows thông qua File Explorer.
+                </p>
+
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">⚙️ Quá trình thực hiện:</h3>
+                <ul style="color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li>Mở File Explorer và truy cập vào các ổ đĩa máy tính.</li>
+                    <li>Tạo thư mục cá nhân theo cú pháp <code>ThucHanh_hotensinhvien</code> và thư mục con <code>TaiLieu</code>.</li>
+                    <li>Tạo và đổi tên các tệp tin văn bản (Text Document).</li>
+                    <li>Thực hiện các lệnh sao chép (Copy & Paste) và di chuyển (Cut & Paste) tệp tin giữa các thư mục.</li>
+                    <li>Xóa tệp tin (xóa tạm thời vào Recycle Bin và xóa vĩnh viễn bằng Shift + Delete).</li>
+                    <li>Thực hành thao tác khôi phục (Restore) tệp tin đã xóa từ Thùng rác.</li>
+                </ul>
+
+                <h3 style="color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.2rem;">📝 Tóm tắt nội dung:</h3>
+                <p style="color: var(--text-main); line-height: 1.6;">
+                    Bài thực hành này hướng dẫn chi tiết các thao tác quản lý dữ liệu cơ bản trên hệ điều hành Windows (File Explorer). 
+                    Nội dung tập trung vào: cách tạo mới thư mục/tệp tin, đổi tên (Rename), sao chép (Copy & Paste), di chuyển (Cut & Paste), 
+                    xóa dữ liệu (Delete / Shift+Delete) và cách khôi phục lại tài liệu vô tình bị xóa từ Thùng rác (Recycle Bin).
+                </p>
+            </div>
+
+            <h3 style="margin-bottom: 1rem; color: var(--text-main);">📄 Tài liệu chi tiết:</h3>
+            <div class="pdf-container">
+                <iframe src="assets/bai_tap_1.pdf" title="Nội dung Bài tập 1"></iframe>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1rem;">
+                <a href="assets/bai_tap_1.pdf" download class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 1rem;">Tải xuống PDF</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
